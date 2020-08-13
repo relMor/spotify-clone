@@ -9,6 +9,12 @@
   padding: 20px;
 }
 
+
+
+.slider{
+    color: green !important;
+}
+
 .left {
   flex: 0.3;
   display: flex;
@@ -35,10 +41,28 @@
   justify-content: space-between;
 }
 
-.albumLogo{
-    height: 60px;
-    width: 60px;
-    margin-right: 20px;
-    object-fit: contain;
-    background-color: white;
+.albumLogo {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  object-fit: contain;
+  background-color: white;
+}
+
+.footer_green {
+  color: #1ed15e;
+}
+
+.songInfo > h4 {
+  margin-bottom: 5px;
+}
+
+.songInfo > p {
+  font-size: 12px;
+}
+
+.footer_icon:hover,
+.footer_green:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.2) !important;
 }

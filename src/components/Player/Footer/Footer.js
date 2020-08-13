@@ -23,7 +23,7 @@ function Footer() {
       </div>
       <div className={classes.center}>
         <ShuffleIcon className={classes.footer_green} />
-        <SkipNextIcon className={classes.footer_icon} />
+        <SkipPreviousIcon className={classes.footer_icon} />
         <PlayCircleOutlineIcon
           fontSize="large"
           className={classes.footer_icon}
@@ -40,7 +40,7 @@ function Footer() {
             <VolumeDownIcon />
           </Grid>
           <Grid item xs>
-            <Slider />
+            <Slider className={classes.slider}/>
           </Grid>
         </Grid>
       </div>
