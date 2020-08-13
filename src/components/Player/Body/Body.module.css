@@ -3,5 +3,59 @@
   padding: 30px;
   color: white;
   height: 100vh;
+  /* overflow-y: overlay; */
+  overflow: auto;
   background: linear-gradient(rgb(91, 87, 115), rgb(0, 0, 0, 1));
+}
+
+/* .body::-webkit-scrollbar{
+    display: none;
+} */
+
+.info {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.info > img {
+  height: 20vw;
+  margin: 0 20px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+}
+
+.infoText {
+  flex: 1;
+}
+
+.infoText > h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.infoText > p {
+  font-size: 12px;
+}
+
+.songs {
+  margin: 20px -30px;
+}
+
+.songsIcon {
+  display: flex;
+  align-items: center;
+}
+
+.iconShuffle {
+  font-size: 80px !important;
+  margin: 20px 20px 20px 50px;
+}
+
+.iconShuffle:hover {
+  transition: 100ms transform ease-in;
+  transform: scale(1.08);
+}
+
+.sideIcon {
+  margin-right: 20px;
 }

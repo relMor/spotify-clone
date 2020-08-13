@@ -1,11 +1,11 @@
 * {
   margin: 0;
-  overflow: hidden;
+  /* overflow: auto; */
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 
 body {
   margin: 0;
