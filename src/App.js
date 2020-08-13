@@ -1,12 +1,17 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+
+import classes from "./App.module.css";
+
+import Login from "./components/Login/Login";
 
 function App() {
   return (
     <div className="App">
-      <h1>SPOTIFY CLONE</h1>
+      <Login />
     </div>
   );
 }
 
 export default App;
+
+// 2688e6d15e294124bf31de3f84e42c07
