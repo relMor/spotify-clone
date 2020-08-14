@@ -4,16 +4,16 @@ import classes from "./Player.module.css";
 
 import Sidebar from "./Sidebar/Sidebar";
 import Body from "./Body/Body";
-import Footer from './Footer/Footer'
+import Footer from "./Footer/Footer";
 
 function Player({ spotify }) {
   return (
     <div className={classes.player}>
       <div className={classes.body}>
         <Sidebar />
-        <Body spotify={spotify}/>
+        <Body spotify={spotify} />
       </div>
-      <Footer />
+      <Footer spotify={spotify} />
     </div>
   );
 }

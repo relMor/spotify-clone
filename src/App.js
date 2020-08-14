@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import SpotifyWebApi from "spotify-web-api-js";
 
 import classes from "./App.module.css";
@@ -38,6 +38,10 @@ function App() {
           type: "SET_PLAYLISTS",
           playlists: playlists,
         });
+      });
+
+      spotify.getMyTopArtists().then((res) => {
+        dispatch({ type: "SET_TOP_ARTISTS", top_artists: res });
       });
 
       spotify.getPlaylist("37i9dQZEVXcUPqg3hVtEFB").then((response) =>

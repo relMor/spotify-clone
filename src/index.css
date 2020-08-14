@@ -3,9 +3,9 @@
   /* overflow: auto; */
 }
 
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
-} */
+}
 
 body {
   margin: 0;

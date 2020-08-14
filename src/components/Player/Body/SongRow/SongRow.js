@@ -2,9 +2,10 @@ import React from "react";
 
 import classes from "./SongRow.module.css";
 
-function SongRow({ track }) {
+function SongRow({ track, playSong }) {
+  //console.log(track);
   return (
-    <div className={classes.songRow}>
+    <div className={classes.songRow} onClick={() => playSong(track.id)}>
       <img className={classes.album} src={track.album.images[0].url} alt="" />
       <div className={classes.info}>
         <h1>{track.name}</h1>
